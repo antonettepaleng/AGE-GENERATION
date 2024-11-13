@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Activities</title>
+</head>
+<body>
+
+    <h1>JavaScript Activity 1 and 2</h1>
+
+    <script>
+        // Accepting the current year and birth year using prompt
+        let currentYear = prompt("Please enter the current year:");
+        let birthYear = prompt("Please enter your birth year:");
+
+        // Converting input values to numbers
+        currentYear = parseInt(currentYear);
+        birthYear = parseInt(birthYear);
+
+        // Calculating the age
+        let age = currentYear - birthYear;
+
+        // Determining the generation based on birth year using if-else
+        let generation;
+
+        if (birthYear >= 1997) {
+            generation = "Generation Z (Gen Z)";
+        } else if (birthYear >= 1981 && birthYear <= 1996) {
+            generation = "Millennials (Gen Y)";
+        } else if (birthYear >= 1965 && birthYear <= 1980) {
+            generation = "Generation X (Gen X)";
+        } else if (birthYear >= 1946 && birthYear <= 1964) {
+            generation = "Baby Boomers";
+        } else if (birthYear >= 1928 && birthYear <= 1945) {
+            generation = "Silent Generation";
+        } else {
+            generation = "Unknown generation";
+        }
+
+        // Alerting the age and generation
+        alert("Your age is: " + age + "\nYou belong to: " + generation);
+    </script>
+
+</body>
+</html>
