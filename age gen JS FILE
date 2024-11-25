@@ -1,0 +1,5 @@
+function showAge(birthYear)
+{
+    let currentYear = new Date() .getFullYear();
+    return Number(currentYear) - Number(birthYear);
+}
